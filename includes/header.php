@@ -1,10 +1,3 @@
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script>
-      jQuery(document).ready(function($){
-      $(".button-collapse").sideNav();
-      });
-    </script>
     <nav class="grey darken-2 nav-extended">
       <div class="container nav-wrapper"><a id="brand-logo" href="/" class="brand-logo">LIBMAIL</a>
         <ul id="nav-mobile" class="side-nav">

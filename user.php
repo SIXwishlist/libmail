@@ -1,3 +1,4 @@
+<!-- Dernière modif par dan à 18:00 le 18/11/2017 merci à max pour l'aide ;-) -->
 <?php if(session_status() == PHP_SESSION_NONE){session_start();}
 include('securimage/securimage.php');
 $securimage = new Securimage();?>
@@ -7,19 +8,7 @@ $securimage = new Securimage();?>
 include("includes/header.php"); ?>
     <main>
 <?php
-$conf['dbHost'] = "";
-$conf['dbName'] = "";
-$conf['dbUser'] = "";
-$conf['dbPassword'] = "";
-
-try{
-  $bdd = new PDO("mysql:host=".$conf['dbHost'].";dbname=".$conf['dbName'], $conf['dbUser'], $conf['dbPassword']);
-}
-catch (Exception $e)
-{
-  die('Erreur : ' . $e->getMessage());
-}
-
+include('includes/bdd/bdd.php');
 $securimage = new Securimage();
 
 if(isset($_POST['email']) && isset($_POST['identity']) && ($_POST['password']) && isset($_POST['password1']) && isset($_POST['captchaText'])){
@@ -71,7 +60,7 @@ if(isset($_POST['email']) && isset($_POST['identity']) && ($_POST['password']) &
           <a href="user.php" class="btn-large waves-effect waves-light">Retour</a>
         </div>
       </div>
-      
+
 <?php } }else{ ?>
 
       <script type="text/javascript" src="includes/form_javascript.js"></script>
@@ -164,4 +153,3 @@ if(isset($_POST['email']) && isset($_POST['identity']) && ($_POST['password']) &
 <?php include("includes/footer.php"); ?>
   </body>
 </html>
-
