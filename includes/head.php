@@ -23,7 +23,7 @@
         background-color: #616161;
       }
       .padding {
-        padding: 2rem;
+        padding: 3%;
       }
     </style>
   </head>
