@@ -36,7 +36,7 @@
   function emailCheck(){
     var email = document.forms["registerForm"].elements["email"].value;
     if(validateEmail(email) == true){
-      if(email.length >= 14 && email.length <= 35){
+      if(email.length >= 4 && email.length <= 30){
         document.forms["registerForm"].elements["email"].setAttribute("class", "form-control is-valid");
         emailOk = true;
       }else{
