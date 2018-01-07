@@ -14,7 +14,7 @@
     }
   }
   function validateEmail(email) {
-      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))$/;
+      var re = /^\w{2,}(.){0,1}\w{2,}$/;
       return re.test(email);
   }
 
