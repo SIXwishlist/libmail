@@ -1,4 +1,3 @@
-<!-- Dernière modif par dan à 18:00 le 18/11/2017 merci à max pour l'aide ;-) -->
 <?php if(session_status() == PHP_SESSION_NONE){session_start();}
 include('securimage/securimage.php');
 $securimage = new Securimage();?>
