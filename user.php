@@ -12,10 +12,11 @@ if(isset($_POST['email']) && isset($_POST['identity']) && ($_POST['password']) &
   //Si la page reçoie les données du formulaires alors on les traite puis on les ajoutes à la bdd
   //Sinon on affiche le formulaire d'inscription
   // #1 vérification de l'email
+  $_POST['email'] = $_POST['email'].'@libmail.eu';
   $check = $bdd->query('SELECT COUNT(*) AS verif FROM virtual_users WHERE email ='.'"'.$_POST['email'].'"');
   $email = $check->fetch();
   $check->closeCursor();
-  if (preg_match("#^[a-z0-9._-]+@libmail.eu$#", $_POST['email'])) {
+  if (preg_match("#[a-z0-9._-]+@libmail.eu$#", $_POST['email'])) {
     $regmail = TRUE;
   }else{
     $regmail = FALSE;
@@ -100,7 +101,7 @@ if(isset($_POST['email']) && isset($_POST['identity']) && ($_POST['password']) &
             <input type="text" name="captchaText" class="form-control" id="captcha" placeholder="Entrer le texte visible ci-dessus." onchange='captchaCheck();' maxlength="6">
           </div>
           <div class="form-group col-12 text-center">
-            <p>En cliquant sur ce bouton vous acceptez les <a href="cgu.php" target="_blank">conditions génerales d'utilisation</a></p>
+            <p>En cliquant sur "S'incrire" vous acceptez les <a href="cgu.php" target="_blank">conditions génerales d'utilisation</a></p>
             <button class="btn btn-lg btn-primary" type="submit" name="submitActionBt" disabled="">S'inscrire</button>
           </div>
           <div class="form-group col-lg-10 offset-lg-1">
