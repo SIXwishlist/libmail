@@ -8,7 +8,7 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="topics" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Liens</a>
             <div class="dropdown-menu" aria-labelledby="topics">
-            <a class="dropdown-item" href="https://laquadrature.net">La quadrature  du net</a>
+            <a class="dropdown-item" href="https://laquadrature.net/fr">La quadrature  du net</a>
             <a class="dropdown-item" href="https://fsf.org">Free Software Foundation</a>
           </div>
         </li>
