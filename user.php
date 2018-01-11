@@ -44,7 +44,7 @@ if(isset($_POST['email']) && isset($_POST['identity']) && ($_POST['password']) &
       <div class="container">
         <div class="row">
           <div class="col-md-10 offset-md-1 text-center">
-            <h3 class="text-success">INSCRIPTION À LIBMAIL TERMINÉE</h3>
+            <h1 class="text-success">INSCRIPTION À LIBMAIL TERMINÉE</h1>
             <p>Connectez-vous dès maintenant sur roundcube</p>
             <a href="https://web.libmail.eu" class="btn btn-lg btn-success">C'est parti !</a>
           </div>
@@ -56,7 +56,7 @@ if(isset($_POST['email']) && isset($_POST['identity']) && ($_POST['password']) &
       <div class="container">
         <div class="row">
           <div class="col-md-10 offset-md-1 text-center">
-            <h3 class="text-danger">INSCRIPTION À LIBMAIL ÉCHOUÉE</h3>
+            <h1 class="text-danger">INSCRIPTION À LIBMAIL ÉCHOUÉE</h1>
             <p>L'email demandé existe déjà ou une des informations renseignées ne répond pas aux normes techniques. Veuillez réessayer ...</p>
             <a href="user.php" class="btn btn-lg btn-success">Retour</a>
           </div>
