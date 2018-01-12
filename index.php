@@ -5,7 +5,7 @@
 <?php include("includes/header.php"); ?>
     <div class="container">
       <div class="jumbotron text-center">
-        <h1 class="display-4 text-primary">Libmail</h1>
+        <h1 class="display-4 text-primary"><strong>Libmail</strong></h1>
         <h2 class="">Un service de courrier électronique simple, rapide, libre et respectueux de la vie privée.</h2>
         <br>
         <a href="user.php" class="btn btn-lg btn-primary">inscription</a>
