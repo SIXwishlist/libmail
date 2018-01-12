@@ -4,8 +4,8 @@
 
 <?php include("includes/header.php"); ?>
       <div class="container text-center">
-        <h1 class="text-primary display-4">Conditions Générales D'Utilisation</h1>
-        <h2 class="">Service de courrier électronique proposé par Libmail.</h2>
+        <h1 class="text-primary display-4"><strong>Conditions Générales D'Utilisation</strong></h1>
+        <h2>Service de courrier électronique proposé par Libmail.</h2>
       </div>
       <div class="container text-justify">
           <p class="lead">Libmail propose un serveur mail au grand public, avec un filtre de spam, une interface web roundcube et 50 Mo de quota par compte.</p>
