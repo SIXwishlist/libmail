@@ -44,7 +44,7 @@ if(isset($_POST['email']) && isset($_POST['identity']) && ($_POST['password']) &
       <div class="container">
         <div class="row">
           <div class="col-md-10 offset-md-1 text-center">
-            <h1 class="text-success display-4">INSCRIPTION À LIBMAIL TERMINÉE</h1>
+            <h1 class="text-success display-4"><strong>INSCRIPTION À LIBMAIL TERMINÉE</strong></h1>
             <p>Connectez-vous dès maintenant sur roundcube</p>
             <a href="https://web.libmail.eu" class="btn btn-lg btn-success">C'est parti !</a>
           </div>
@@ -56,7 +56,7 @@ if(isset($_POST['email']) && isset($_POST['identity']) && ($_POST['password']) &
       <div class="container">
         <div class="row">
           <div class="col-md-10 offset-md-1 text-center">
-            <h1 class="text-danger display-4">INSCRIPTION À LIBMAIL ÉCHOUÉE</h1>
+            <h1 class="text-danger display-4"><strong>INSCRIPTION À LIBMAIL ÉCHOUÉE</strong></h1>
             <p>L'email demandé existe déjà ou une des informations renseignées ne répond pas aux normes techniques. Veuillez réessayer ...</p>
             <a href="user.php" class="btn btn-lg btn-success">Retour</a>
           </div>
@@ -67,7 +67,7 @@ if(isset($_POST['email']) && isset($_POST['identity']) && ($_POST['password']) &
 
   <script type="text/javascript" src="includes/form_javascript.js"></script>
   <div class="container">
-    <h1 class="text-primary display-4 text-center" style="padding-bottom: 2rem;">INSCRIPTION À LIBMAIL</h1>
+    <h1 class="text-primary display-4 text-center" style="padding-bottom: 2rem;"><strong>INSCRIPTION À LIBMAIL</strong></h1>
     <div class="row">
       <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
         <form  name="registerForm" action="user.php" method="post">
@@ -106,7 +106,7 @@ if(isset($_POST['email']) && isset($_POST['identity']) && ($_POST['password']) &
           <div class="form-group col-lg-10 offset-lg-1">
             <div class="card text-white" style="background-color: #616161">
               <div class="card-body">
-                <h4 class="card-title">À propos des données personnelles ...</h4>
+                <h4 class="card-title">À propos des données personnelles...</h4>
                 <li>Les informations recueillies sur ce formulaire sont enregistrées dans un fichier informatisé par Libmail pour le fonctionnement de vos services mail.</li>
                 <li>Elles sont conservées pendant toute la durée de validité de votre compte Libmail et ne sont destinées à aucune entité tierce.</li>
                 <li>Conformément à la loi « informatique et libertés », vous pouvez exercer votre droit d'accès aux données vous concernant et les faire rectifier en contactant : L'équipe Libmail <a class="text-warning" href="mailto:team@libmail.eu?subject=Question_relative_aux_données_personelles">team@libmail.eu</a>.</li>
