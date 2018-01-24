@@ -20,7 +20,7 @@
         width: 100%;
         height: 60px;
         line-height: 60px;
-        background-color: #616161;
+        background-color: #007BFF;
       }
       .padding {
         padding: 4.5%;

@@ -8,7 +8,7 @@
         <h1 class="display-4 text-primary"><strong>Libmail</strong></h1>
         <h2 class="">Un service de courrier électronique simple, rapide, libre et respectueux de la vie privée.</h2>
         <br>
-        <a href="user.php" class="btn btn-lg btn-primary">inscription</a>
+        <a href="user.php" class="btn btn-lg btn-warning">inscription</a>
       </div>
     </div>
     <div class="container">

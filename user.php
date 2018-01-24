@@ -104,7 +104,7 @@ if(isset($_POST['email']) && isset($_POST['identity']) && ($_POST['password']) &
             <button class="btn btn-lg btn-primary" type="submit" name="submitActionBt" disabled="">S'inscrire</button>
           </div>
           <div class="form-group col-lg-10 offset-lg-1">
-            <div class="card text-white" style="background-color: #616161">
+            <div class="card text-white" style="background-color: #778899">
               <div class="card-body">
                 <h4 class="card-title">À propos des données personnelles...</h4>
                 <li>Les informations recueillies sur ce formulaire sont enregistrées dans un fichier informatisé par Libmail pour le fonctionnement de vos services mail.</li>

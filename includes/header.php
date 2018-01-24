@@ -1,4 +1,4 @@
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #616161;">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #007BFF ;">
       <div class="container">
         <a class="navbar-brand" href="/">
           <h1 class="brand-link">LIBMAIL</h1>
@@ -25,7 +25,7 @@
               <a href="https://searx.libmail.eu" class="nav-link">Searx</a>
             </li>
           </ul>
-          <a class="btn btn-primary" href="https://web.libmail.eu">Mon compte</a>
+          <a class="btn btn-warning" href="https://web.libmail.eu">Mon compte</a>
         </div>
       </div>
     </nav>
