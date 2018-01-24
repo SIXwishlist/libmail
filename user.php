@@ -74,7 +74,7 @@ if(isset($_POST['email']) && isset($_POST['identity']) && ($_POST['password']) &
           <div class="form-group col-12">
             <label for="email" data-error="L'adresse Libmail renseignée ne convient pas.">Votre adresse Libmail</label>
             <div class="input-group">
-              <input type="text" name="email" class="form-control" id="email" placeholder="Nom d'utilisateur" aria-label="email" aria-describedby="domain" onchange='emailCheck();'>
+              <input type="text" name="email" class="form-control" id="email" placeholder="Nom d'utilisateur" aria-label="email" aria-describedby="domain" oninput='emailCheck();'>
               <div class="input-group-append">
                 <span class="input-group-text" id="domain">@libmail.eu</span>
               </div>
@@ -82,22 +82,22 @@ if(isset($_POST['email']) && isset($_POST['identity']) && ($_POST['password']) &
           </div>
           <div class="form-group col-12">
             <label for="identity" data-error="L'identité renseignée ne convient pas.">Nom et Prénom</label>
-            <input type="text" name="identity" class="form-control" id="identity" placeholder="Renseignez votre identité" onchange='identityCheck();'>
+            <input type="text" name="identity" class="form-control" id="identity" placeholder="Renseignez votre identité" oninput='identityCheck();'>
           </div>
           <div class="form-group col-12">
             <label for="password" data-error="Votre mot de passe doit faire au moins 8 caractères.">Mot de Passe</label>
-            <input type="password" name="password" class="form-control" id="password" placeholder="Entrez votre Mot de Passe" onchange='passwordCheck();'>
+            <input type="password" name="password" class="form-control" id="password" placeholder="Entrez votre Mot de Passe" oninput='passwordCheck();'>
           </div>
           <div class="form-group col-12">
             <label for="confirmPassword" data-error="Les mots de passe ne correspondent pas.">Confirmation de Mot de Passe</label>
-            <input type="password" name="password1" class="form-control" id="confirmPassword" placeholder="Confirmez votre Mot de Passe" onchange='confirmPasswordCheck();'>
+            <input type="password" name="password1" class="form-control" id="confirmPassword" placeholder="Confirmez votre Mot de Passe" oninput='confirmPasswordCheck();'>
           </div>
           <div class="form-group col-12 text-center">
             <img class="center" id="captcha" src="securimage/securimage_show.php" alt="CAPTCHA Image" />
           </div>
           <div class="form-group col-12">
             <label for="captchaText" data-error="Le code renseigné ne convient pas.">Captcha</label>
-            <input type="text" name="captchaText" class="form-control" id="captcha" placeholder="Entrer le texte visible ci-dessus." onchange='captchaCheck();' maxlength="6">
+            <input type="text" name="captchaText" class="form-control" id="captcha" placeholder="Entrer le texte visible ci-dessus." oninput='captchaCheck();' maxlength="6">
           </div>
           <div class="form-group col-12 text-center">
             <p>En cliquant sur "S'incrire" vous acceptez les <a href="cgu.php" target="_blank">conditions génerales d'utilisation</a></p>
