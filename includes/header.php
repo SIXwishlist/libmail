@@ -1,22 +1,31 @@
-    <nav class="grey darken-2 nav-extended">
-      <div class="container nav-wrapper"><a id="brand-logo" href="/" class="brand-logo">LIBMAIL</a>
-        <ul id="nav-mobile" class="side-nav">
-          <li><a href="https://searx.libmail.eu"><i class="material-icons left">search</i>Searx</a></li>
-          <li><a href="blog"><i class="material-icons left">group</i>Blog</a></li>
-          <li><a href="https://wiki.libmail.eu"><i class="material-icons left">blur_on</i>Wiki</a></li>
-          <li><a href="https://web.libmail.eu"><i class="material-icons left">cloud</i>Client Web</a></li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
-      <div class="container hide-on-med-and-down">
-        <div class="nav-content row right">
-          <ul>
-            <li><a class="btn-large waves-effect waves-light grey" href="/"><i class="material-icons left">home</i>accueil</a></li>
-            <li><a class="btn-large waves-effect waves-light" href="https://searx.libmail.eu"><i class="material-icons left">search</i>searx</a></li>
-            <li><a class="btn-large waves-effect waves-light" href="blog"><i class="material-icons left">group</i>blog</a></li>
-            <li><a class="btn-large waves-effect waves-light" href="https://wiki.libmail.eu"><i class="material-icons left">blur_on</i>wiki</a></li>
-            <li><a class="btn-large waves-effect waves-light" href="https://web.libmail.eu"><i class="material-icons left">cloud</i>Web</a></li>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #007BFF ;">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <h1 class="brand-link">LIBMAIL</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expandeded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="topics" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Liens</a>
+                <div class="dropdown-menu" aria-labelledby="topics">
+                <a class="dropdown-item" href="https://laquadrature.net/fr">La quadrature  du net</a>
+                <a class="dropdown-item" href="https://fsf.org">Free Software Foundation</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a href="https://wiki.libmail.eu" class="nav-link">Wiki</a>
+            </li>
+          <li class="nav-item">
+              <a href="blog" class="nav-link">Blog</a>
+            </li>
+              <li class="nav-item">
+              <a href="https://searx.libmail.eu" class="nav-link">Searx</a>
+            </li>
           </ul>
+          <a class="btn btn-warning" href="https://web.libmail.eu">Mon compte</a>
         </div>
       </div>
     </nav>
