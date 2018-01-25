@@ -12,13 +12,13 @@
       }
       body {
         padding-top: 6.5rem; /*for navbar*/
-        padding-bottom: 5rem; /*for footer*/
+        padding-bottom: 12rem; /*for footer*/
       }
       .footer {
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 60px;
+        height: 180px;
         line-height: 60px;
         background-color: #007BFF;
       }
