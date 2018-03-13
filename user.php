@@ -8,6 +8,21 @@ include("includes/header.php");
 include("includes/bdd/bdd.php");
 $securimage = new Securimage();
 
+$serviceUp = FALSE; // variable définissant l'état du service
+
+if ($serviceUp = FALSE) { ?>
+
+  <div class="container">
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Attention !</strong> En raison d'une restructuration des services de <a href="https://www.libmail.eu">libmail.eu</a> les inscriptions seront fermées durant un période de quelques jours. Les services des utilisateurs déjà inscrits sont maintenus. Pour suivre l'actualité de Libmail, rendez-vous sur le <a href="https://www.libmail.eu/blog">blog</a>.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+
+<?php }
+
 if(isset($_POST['email']) && isset($_POST['identity']) && ($_POST['password']) && isset($_POST['password1']) && isset($_POST['captchaText'])){
   //Si la page reçoie les données du formulaires alors on les traite puis on les ajoutes à la bdd
   //Sinon on affiche le formulaire d'inscription
@@ -27,7 +42,7 @@ if(isset($_POST['email']) && isset($_POST['identity']) && ($_POST['password']) &
   }else{
     $regidentity = FALSE;
   }
-  if ($regmail == TRUE && $email['verif'] == 0 && strlen($_POST['email']) >= 14 && $regidentity = TRUE && strlen($_POST['password']) >= 8 && strlen($_POST['email']) <= 35 && $_POST['password'] == $_POST['password1'] && $securimage->check($_POST['captchaText']) == true) {
+  if ($regmail == TRUE && $email['verif'] == 0 && strlen($_POST['email']) >= 14 && $regidentity = TRUE && strlen($_POST['password']) >= 8 && strlen($_POST['email']) <= 35 && $_POST['password'] == $_POST['password1'] && $securimage->check($_POST['captchaText']) == true && $serviceUp = TRUE) {
     // #3 traitement de la phrase de passe
     $salt = '$5$'.bin2hex(random_bytes(16)).'$';
     $passhash = '{SHA256-CRYPT}'.crypt($_POST['password'], $salt);
