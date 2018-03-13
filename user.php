@@ -8,9 +8,9 @@ include("includes/header.php");
 include("includes/bdd/bdd.php");
 $securimage = new Securimage();
 
-$serviceUp = FALSE; // variable définissant l'état du service
+$serviceDown = TRUE; // variable définissant l'état du service
 
-if ($serviceUp = FALSE) { ?>
+if ($serviceDown) { ?>
 
   <div class="container">
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -42,7 +42,7 @@ if(isset($_POST['email']) && isset($_POST['identity']) && ($_POST['password']) &
   }else{
     $regidentity = FALSE;
   }
-  if ($regmail == TRUE && $email['verif'] == 0 && strlen($_POST['email']) >= 14 && $regidentity = TRUE && strlen($_POST['password']) >= 8 && strlen($_POST['email']) <= 35 && $_POST['password'] == $_POST['password1'] && $securimage->check($_POST['captchaText']) == true && $serviceUp = TRUE) {
+  if ($regmail == TRUE && $email['verif'] == 0 && strlen($_POST['email']) >= 14 && $regidentity = TRUE && strlen($_POST['password']) >= 8 && strlen($_POST['email']) <= 35 && $_POST['password'] == $_POST['password1'] && $securimage->check($_POST['captchaText']) == true && $serviceDown = FALSE) {
     // #3 traitement de la phrase de passe
     $salt = '$5$'.bin2hex(random_bytes(16)).'$';
     $passhash = '{SHA256-CRYPT}'.crypt($_POST['password'], $salt);
