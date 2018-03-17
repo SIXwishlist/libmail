@@ -11,8 +11,8 @@ $securimage = new Securimage();?>
 <?php include("includes/head.php");
 include("includes/header.php");
 include("includes/bdd/bdd.php");
+include("includes/serviceState.php");
 $securimage = new Securimage();
-$serviceStateUp = FALSE; #variable définissant l'ouverture des inscriptions
 
 if ($serviceStateUp == FALSE) { ?>
 
@@ -25,7 +25,7 @@ if ($serviceStateUp == FALSE) { ?>
     </div>
   </div>
 
-<?php }
+<?php }else{ // si le service est Up on passe au formulaire
 
 if(isset($_POST['email']) && isset($_POST['identity']) && ($_POST['password']) && isset($_POST['password1']) && isset($_POST['captchaText'])){
   //Si la page reçoie les données du formulaires alors on les traite puis on les ajoutes à la bdd
@@ -141,7 +141,7 @@ if(isset($_POST['email']) && isset($_POST['identity']) && ($_POST['password']) &
   </div>
 
 
-<?php }
+<?php }}
 include("includes/footer.php"); ?>
   </body>
 </html>

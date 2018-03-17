@@ -1,8 +1,8 @@
 blog/
 includes/bdd/
+includes/serviceState.php
 securimage/
 css/
 js/
 fonts/
 open-iconic/
-
