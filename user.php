@@ -20,7 +20,7 @@ if ($serviceStateUp == FALSE) { ?>
 
   <div class="container">
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
-      <strong>Attention !</strong> En raison d'une restructuration des services de <a href="https://www.libmail.eu">libmail.eu</a> les inscriptions seront fermées durant un période de quelques jours. Les services des utilisateurs déjà inscrits sont maintenus. Pour suivre l'actualité de Libmail, rendez-vous sur le <a href="https://www.libmail.eu/blog">blog</a>.
+      <strong>Attention !</strong> En raison d'une restructuration des services de <a href="https://www.libmail.eu">libmail.eu</a> les inscriptions seront fermées durant une période de quelques jours. Les services des utilisateurs déjà inscrits sont maintenus. Pour suivre l'actualité de Libmail, rendez-vous sur le <a href="https://www.libmail.eu/blog">blog</a>.
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
