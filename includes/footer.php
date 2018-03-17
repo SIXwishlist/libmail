@@ -1,6 +1,6 @@
     <footer class="footer">
       <div class="container text-center text-light">
-        <div>Made by <a class="text-warning" href="https://github.com/dpress29/libmail/graphs/contributors">Team Libmail</a> under license <a class="text-warning" href="https://github.com/dpress29/libmail/blob/master/LICENSE">GNU GPL v3</a><br><a class="text-warning" href="https://github.com/dpress29/libmail">Voir le code source</a></div>
+        <div>Made by <a class="text-warning" href="https://github.com/dpress29/libmail/graphs/contributors">Team Libmail</a> under license <a class="text-warning" href="https://github.com/dpress29/libmail/blob/master/LICENSE">GNU GPL v3</a><br><a class="text-warning" href="https://github.com/dpress29/libmail">Voir le code source</a> - <a class="text-warning" href="cgu.php">CGU</a></div>
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
